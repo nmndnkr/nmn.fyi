@@ -28,7 +28,7 @@ jobs:
       - name: Prepare public site
         run: |
           mkdir -p _site/work/dataself _site/output/pdf
-          cp index.html styles.css script.js favicon.svg social-card.svg site.webmanifest robots.txt sitemap.xml CNAME 404.html _site/
+          cp index.html styles.css script.js favicon.svg social-card.svg site.webmanifest robots.txt sitemap.xml 404.html _site/
           cp work/dataself/index.html work/dataself/styles.css _site/work/dataself/
           cp output/pdf/DataSelf-Product-Case-Study.pdf _site/output/pdf/
       - name: Upload site
