@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f1f0e8"/>
+  <path d="M0 1h1200M0 629h1200" stroke="#11120f" stroke-opacity=".25"/>
+  <circle cx="1080" cy="106" r="38" fill="#11120f"/>
+  <text x="1080" y="111" fill="#c7ff18" font-family="monospace" font-size="13" text-anchor="middle">N/D</text>
+  <text x="72" y="90" fill="#11120f" font-family="monospace" font-size="18" letter-spacing="3">PRODUCT · AI · SYSTEMS</text>
+  <text x="66" y="305" fill="#11120f" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-8">Naman Dhankhar</text>
+  <text x="72" y="402" fill="#6e7068" font-family="Georgia, serif" font-size="62" font-style="italic">Turning messy problems into useful things.</text>
+  <rect x="72" y="510" width="1056" height="2" fill="#11120f"/>
+  <rect x="72" y="510" width="320" height="14" fill="#c7ff18"/>
+  <text x="72" y="567" fill="#11120f" font-family="monospace" font-size="16" letter-spacing="2">NMN.FYI / NEW YORK</text>
+</svg>

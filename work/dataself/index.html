@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DataSelf product case study: a local, portable behavioral memory layer for LLM users."
+    />
+    <meta name="theme-color" content="#c7ff18" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DataSelf — Product Case Study" />
+    <meta
+      property="og:description"
+      content="Why I moved from counting LLM interactions to building portable behavioral memory."
+    />
+    <meta property="og:url" content="https://nmn.fyi/work/dataself/" />
+    <link rel="canonical" href="https://nmn.fyi/work/dataself/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/work/dataself/styles.css" />
+    <title>DataSelf — Product Case Study</title>
+  </head>
+  <body class="case-body">
+    <a class="skip-link" href="#case-main">Skip to content</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="case-header">
+      <a class="wordmark" href="/">
+        <span class="wordmark-mark">N/D</span>
+        <span class="wordmark-name">Naman Dhankhar</span>
+      </a>
+      <span class="case-header-label">Product case / 01</span>
+      <a class="case-back" href="/#work">← Selected work</a>
+    </header>
+
+    <main id="case-main">
+      <section class="case-hero">
+        <div class="case-kicker">
+          <span>DataSelf / 2026</span>
+          <span>Product · Prototype · Validation</span>
+        </div>
+        <h1>
+          Your AI learns how you work.
+          <em>You should be able to take that with you.</em>
+        </h1>
+        <div class="case-hero-bottom">
+          <p>
+            DataSelf turns real LLM sessions into a local, portable memory of
+            workflows, trust boundaries, and decision rules—without saving the
+            conversation itself.
+          </p>
+          <div class="case-actions">
+            <a href="https://github.com/nmndnkr/dataself" target="_blank" rel="noreferrer">
+              View GitHub <span>↗</span>
+            </a>
+            <a href="/output/pdf/DataSelf-Product-Case-Study.pdf">
+              Two-page PDF <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="case-banner" aria-label="Illustration of DataSelf memory graph">
+          <div class="case-menu">
+            <span class="case-menu-logo">D/S</span>
+            <span>DataSelf is recording</span>
+            <span class="case-menu-live">LIVE</span>
+            <strong>+294</strong><i>−0</i>
+          </div>
+          <div class="case-graph" aria-hidden="true">
+            <svg viewBox="0 0 1000 430">
+              <path d="M500 215 170 95M500 215 825 90M500 215 185 345M500 215 820 345"></path>
+            </svg>
+            <span class="case-node center">YOU</span>
+            <span class="case-node top-left">OWNS PRODUCT DIRECTION</span>
+            <span class="case-node top-right">AGENT HANDLES EXECUTION</span>
+            <span class="case-node bottom-left">NARROW FUNCTIONAL MVP</span>
+            <span class="case-node bottom-right">REAL SESSIONS AS EVIDENCE</span>
+          </div>
+          <p>8 memories extracted · 0 raw messages retained · context ready to move</p>
+        </div>
+      </section>
+
+      <section class="case-snapshot" aria-label="Project results">
+        <article><strong>01</strong><span>primary user</span></article>
+        <article><strong>0</strong><span>raw conversations stored</span></article>
+        <article><strong>8</strong><span>memories from the first session</span></article>
+        <article><strong>4/5</strong><span>behaviors transferred</span></article>
+        <article><strong>19/19</strong><span>automated tests passing</span></article>
+      </section>
+
+      <section class="case-section origin">
+        <div class="case-section-label">01 / THE TURN</div>
+        <div class="case-two-col">
+          <h2>I built the counter first.<br />It exposed the better product.</h2>
+          <div class="case-prose">
+            <p class="case-lead">
+              The hackathon version counted prompts, responses, copies, and
+              corrections. That made activity visible, but activity was not the
+              thing worth carrying between providers.
+            </p>
+            <p>
+              The durable value was behavioral: how someone researches, what
+              they verify, what they delegate, and what “done” means to them.
+              Provider history can remember that, but the user cannot take it
+              elsewhere. DataSelf moved from an interaction ledger to a portable
+              memory layer.
+            </p>
+            <div class="case-callout">
+              <span>Product insight</span>
+              <strong>The useful unit is not a prompt. It is a reusable working rule.</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section-label">02 / USER + JOB</div>
+        <div class="case-two-col">
+          <h2>One user.<br />One painful reset.</h2>
+          <div class="case-prose">
+            <div class="case-definition">
+              <span>First user</span>
+              <p>An individual whose work with an LLM improves as the model learns how they operate.</p>
+            </div>
+            <div class="case-definition">
+              <span>Job to be done</span>
+              <p>When I change LLMs, help me bring how I work so I do not have to teach the new one from zero.</p>
+            </div>
+            <div class="case-definition">
+              <span>Why not teams first?</span>
+              <p>Teams add permissions, shared truth, and governance before the core transfer is proven. Personal memory gives the shortest path to a falsifiable test.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section decisions">
+        <div class="case-section-label">03 / PRODUCT DECISIONS</div>
+        <div class="case-title-row">
+          <h2>Choosing what not to build<br />was most of the product work.</h2>
+          <p>Each choice bought speed or trust and accepted a visible cost.</p>
+        </div>
+        <div class="decision-grid">
+          <article>
+            <span>Memory format</span>
+            <h3>Behavioral rules <i>over</i> transcripts or embeddings</h3>
+            <p>Portable and legible without retaining the most sensitive material.</p>
+            <small>Cost: loses conversational nuance.</small>
+          </article>
+          <article>
+            <span>Extraction</span>
+            <h3>Active LLM <i>over</i> sending the chat to a second model</h3>
+            <p>The provider already has the session, so extraction needs no second copy.</p>
+            <small>Cost: adapter quality depends on provider UI.</small>
+          </article>
+          <article>
+            <span>Storage</span>
+            <h3>Local Markdown <i>over</i> a cloud account</h3>
+            <p>The user can inspect, edit, move, or delete every memory with ordinary tools.</p>
+            <small>Cost: no automatic multi-device sync.</small>
+          </article>
+          <article>
+            <span>Update loop</span>
+            <h3>Automatic + provisional <i>over</i> approve-every-item</h3>
+            <p>A menu-bar tool cannot become another inbox. Repetition strengthens a memory; edits remain reversible.</p>
+            <small>Cost: weak inferences can appear temporarily.</small>
+          </article>
+          <article>
+            <span>Portability</span>
+            <h3>One context file <i>over</i> provider integrations</h3>
+            <p>Markdown works everywhere and made provider transfer testable in one week.</p>
+            <small>Cost: the first migration step is manual.</small>
+          </article>
+          <article class="decision-no">
+            <span>Explicit non-goals</span>
+            <h3>No cloud sync. No team memory. No raw chat archive.</h3>
+            <p>Those features widen the system before proving that portable memory changes the next session.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section flow">
+        <div class="case-section-label">04 / MVP</div>
+        <div class="case-title-row">
+          <h2>A small loop that ends<br />in a portable artifact.</h2>
+          <p>The output stays useful even if DataSelf disappears.</p>
+        </div>
+        <ol class="flow-list">
+          <li><span>01</span><strong>Start</strong><p>Toggle recording from the macOS menu bar.</p></li>
+          <li><span>02</span><strong>Work</strong><p>Use the active LLM normally; retain only content-free events.</p></li>
+          <li><span>03</span><strong>Extract</strong><p>Ask the active LLM for a strict memory patch at session end.</p></li>
+          <li><span>04</span><strong>Validate</strong><p>Reject unknown types, multiline content, or mismatched evidence.</p></li>
+          <li><span>05</span><strong>Move</strong><p>Export <code>dataself-context.md</code> and bring it to a new LLM.</p></li>
+        </ol>
+      </section>
+
+      <section class="case-section test">
+        <div class="case-section-label">05 / TEST</div>
+        <div class="case-two-col">
+          <h2>I tested behavior,<br />not whether the file opened.</h2>
+          <div class="case-prose">
+            <p class="case-lead">
+              Two fresh anonymous ChatGPT sessions received the same vague new
+              product request. One had no memory. One received DataSelf’s context.
+            </p>
+            <div class="test-compare">
+              <article>
+                <span>Without DataSelf</span>
+                <p>Selected a product direction, proposed a broad multi-week build, and asked several questions at once.</p>
+              </article>
+              <article class="test-pass">
+                <span>With DataSelf</span>
+                <p>Made no product assumption, asked one focused question, kept the MVP narrow, and reserved execution until direction was clear.</p>
+              </article>
+            </div>
+            <div class="case-callout">
+              <span>Result</span>
+              <strong>4 of 5 known behaviors transferred without correction.</strong>
+              <p>The fifth—three-line completion handoff—was not exercised because the test stopped at product definition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section metrics">
+        <div class="case-section-label">06 / SUCCESS</div>
+        <div class="case-title-row">
+          <h2>Success is less<br />re-explanation.</h2>
+          <p>Prompt volume would reward usage, not continuity.</p>
+        </div>
+        <div class="metric-table" role="table" aria-label="DataSelf success metrics">
+          <div role="row"><span role="cell">North star</span><strong role="cell">Real sessions migrated with materially less workflow re-explanation</strong><i role="cell">Outcome</i></div>
+          <div role="row"><span role="cell">Known preferences followed</span><strong role="cell">≥ 4 of 5</strong><i role="cell">Passed: 4/5</i></div>
+          <div role="row"><span role="cell">Raw conversation retained</span><strong role="cell">0 bytes</strong><i role="cell">Passed</i></div>
+          <div role="row"><span role="cell">Memories linked to real sessions</span><strong role="cell">100%</strong><i role="cell">Passed</i></div>
+          <div role="row"><span role="cell">Setup to first update</span><strong role="cell">&lt; 10 minutes</strong><i role="cell">Still unproven</i></div>
+          <div role="row"><span role="cell">Corrective messages</span><strong role="cell">Fewer than baseline</strong><i role="cell">Next multi-session test</i></div>
+        </div>
+      </section>
+
+      <section class="case-section next">
+        <div class="case-section-label">07 / WHAT I KNOW</div>
+        <div class="case-two-col">
+          <h2>Built evidence is not<br />market evidence.</h2>
+          <div class="case-prose">
+            <p class="case-lead">
+              The prototype proves the memory can transfer. It does not yet prove
+              that enough people feel the reset, trust automatic extraction, or
+              keep using the system.
+            </p>
+            <h3>Next experiment</h3>
+            <p>
+              Recruit five heavy LLM users for three sessions each. Measure setup
+              time, memory edit/deletion rate, corrective messages with and
+              without context, and whether they choose to migrate the file again.
+            </p>
+            <h3>Risks I would watch</h3>
+            <ul>
+              <li>Provider UI changes breaking automatic capture.</li>
+              <li>Confident but wrong memories becoming sticky.</li>
+              <li>A context file growing until it becomes noise.</li>
+              <li>Users valuing convenience more than portability.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-close">
+        <p>Product definition · prioritization · privacy · prototyping · experiment design · metrics · technical execution</p>
+        <h2>DataSelf is small on purpose.<br />The question it tests is not.</h2>
+        <div class="case-actions">
+          <a href="https://github.com/nmndnkr/dataself" target="_blank" rel="noreferrer">Explore the build <span>↗</span></a>
+          <a href="https://nmndnkr.github.io/dataself/" target="_blank" rel="noreferrer">Open product site <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer">
+      <a href="/">Naman Dhankhar</a>
+      <span>DataSelf / Product case study / 2026</span>
+      <a href="mailto:namandhankhar7@gmail.com">Email ↗</a>
+    </footer>
+  </body>
+</html>

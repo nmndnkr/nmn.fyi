@@ -1,0 +1,16 @@
+{
+  "name": "Naman Dhankhar",
+  "short_name": "Naman",
+  "description": "Product, AI, and systems portfolio of Naman Dhankhar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f0e8",
+  "theme_color": "#f1f0e8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.DS_Store
+
+# Local product workspaces and operating material are not part of the public site.
+/dataself/
+/product-project-template/
+/OPERATING_GUIDE.md
+/PRODUCTS.md
+/STUDIO_ROADMAP.md
+/new-product.sh
+
+# Generated local intermediates.
+tmp/
+scripts/__pycache__/
