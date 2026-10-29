@@ -80,8 +80,52 @@ a:focus {
 
 .landing .name {
   margin: 0 0 24px;
+  font-weight: 700;
   font-size: min(32px, calc((100vw - 2 * var(--gutter)) * 1.15 / 25));
-  text-indent: 0.15em; /* optically center tracked-out caps */
+}
+
+.landing .name .type {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: calc(var(--chars) * 1ch + var(--chars) * 0.15em);
+  animation: typing 1.1s steps(var(--chars), end) 0.25s both;
+}
+
+.landing .name .caret {
+  display: inline-block;
+  width: 0.14em;
+  height: 0.72em;
+  margin-left: 0.04em;
+  background: var(--ink);
+  vertical-align: baseline;
+  animation: blink 1.1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  50%,
+  95% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing .name .type,
+  .landing .name .caret {
+    animation: none;
+  }
 }
 
 .sentence {

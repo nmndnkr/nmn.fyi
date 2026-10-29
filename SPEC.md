@@ -80,7 +80,7 @@ Restraint is the design. A quiet, well-set page of writing. Light mode only.
 | Body text | serif 400 | 19px | 1.55 | max-width var(--measure) |
 | Labels, nav, metadata | mono 400 | 13px | 1.6 | uppercase, letter-spacing 0.15em |
 
-Only weight 400 anywhere. Italic is for emphasis inside body text only.
+Only weight 400 anywhere, except the landing name which is 700 (Naman's request, 2026-10-29). Italic is for emphasis inside body text only.
 
 ### Links
 
@@ -90,14 +90,14 @@ Only weight 400 anywhere. Italic is for emphasis inside body text only.
 
 ### Layout
 
-- **Landing:** content centered vertically and horizontally in the viewport. The name in mono caps (Naman Dhankhar) at roughly 115% of the sentence size, optically centered (text-indent matching letter-spacing), then 24px of space, then the sentence, then 32px of space, then the mono link list stacked vertically with line-height 2.2. Directly under the THESES link, the title of the most recently updated thesis, in serif 17px, `--muted`, linking to that thesis; it shows only once at least one thesis is published. Nothing else on the page. (Name above the sentence added at Naman's request, 2026-10-29.)
+- **Landing:** content centered vertically and horizontally in the viewport. The name in bold mono caps (Naman Dhankhar, weight 700) at roughly 115% of the sentence size, revealed on load by a CSS-only typing animation with a blinking caret after the last letter (no JavaScript; respects prefers-reduced-motion), then 24px of space, then the sentence, then 32px of space, then the mono link list stacked vertically with line-height 2.2. Directly under the THESES link, the title of the most recently updated thesis, in serif 17px, `--muted`, linking to that thesis; it shows only once at least one thesis is published. Nothing else on the page. (Name above the sentence added at Naman's request, 2026-10-29.)
 - **Subpages:** one column of width `var(--measure)`, centered, side padding `var(--gutter)`. At the top, a mono `NMN.FYI` link back to `/`. At the bottom, a mono footer row: `EMAIL · LINKEDIN · GITHUB`.
 - **Lists** (theses, work, writing): each item is a row with the title in serif 22px, and metadata beneath in mono (status, date). Rows are separated by a 1px `--rule` line. No cards, no boxes, no images.
 - No horizontal scroll at 375px width.
 
 ### Out of scope for v1 (do not build)
 
-Dark mode or a theme toggle, animations or transitions, the contour/canvas hero, any JavaScript interactivity, analytics, a CMS or admin, comments, search, tag pages, RSS, newsletter signup, images on list pages, per-page OG images.
+Dark mode or a theme toggle, animations or transitions (sole exception: the landing name typing animation, CSS only, added at Naman's request 2026-10-29), the contour/canvas hero, any JavaScript interactivity, analytics, a CMS or admin, comments, search, tag pages, RSS, newsletter signup, images on list pages, per-page OG images.
 
 ## Content model
 
