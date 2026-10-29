@@ -1,0 +1,34 @@
+---
+import "@fontsource/eb-garamond/400.css";
+import "@fontsource/eb-garamond/400-italic.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "../styles/global.css";
+import { site } from "../site";
+
+const { title } = Astro.props;
+const pending = (value: string) => value === "TODO" || value.startsWith("TODO");
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="shell">
+		<a class="home mono" href="/">NMN.FYI</a>
+		<main class="page">
+			<slot />
+		</main>
+		<footer class="mono">
+			{pending(site.email) ? <span>EMAIL</span> : <a href={`mailto:${site.email}`}>EMAIL</a>}
+			<span aria-hidden="true"> · </span>
+			{pending(site.linkedin) ? <span>LINKEDIN</span> : <a href={site.linkedin}>LINKEDIN</a>}
+			<span aria-hidden="true"> · </span>
+			<a href={site.github}>GITHUB</a>
+		</footer>
+	</body>
+</html>

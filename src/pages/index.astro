@@ -1,4 +1,11 @@
 ---
+import "@fontsource/eb-garamond/400.css";
+import "@fontsource/eb-garamond/400-italic.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "../styles/global.css";
+import { site } from "../site";
+
+const pending = (value: string) => value === "TODO" || value.startsWith("TODO");
 ---
 
 <html lang="en">
@@ -8,9 +15,24 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>nmn.fyi</title>
+		<title>{site.name}</title>
 	</head>
-	<body>
-		<h1>nmn.fyi</h1>
+	<body class="landing">
+		<main>
+			<p class="sentence">{site.sentence}</p>
+			<nav class="mono">
+				<ul>
+					<li><a href="/theses">THESES</a></li>
+					<li><a href="/work">WORK</a></li>
+					<li><a href="/writing">WRITING</a></li>
+					<li><a href="/resume.pdf">RESUME</a></li>
+					<li>
+						{pending(site.email) ? <span>EMAIL</span> : <a href={`mailto:${site.email}`}>EMAIL</a>}
+						<span aria-hidden="true"> · </span>
+						{pending(site.linkedin) ? <span>LINKEDIN</span> : <a href={site.linkedin}>LINKEDIN</a>}
+					</li>
+				</ul>
+			</nav>
+		</main>
 	</body>
 </html>
