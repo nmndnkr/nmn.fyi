@@ -6,6 +6,9 @@ import "../styles/global.css";
 import { site } from "../site";
 
 const pending = (value: string) => value === "TODO" || value.startsWith("TODO");
+const comma = site.sentence.indexOf(", ");
+const line1 = comma > -1 ? site.sentence.slice(0, comma + 1) : site.sentence;
+const line2 = comma > -1 ? site.sentence.slice(comma + 2) : "";
 ---
 
 <html lang="en">
@@ -19,7 +22,10 @@ const pending = (value: string) => value === "TODO" || value.startsWith("TODO");
 	</head>
 	<body class="landing">
 		<main>
-			<p class="sentence">{site.sentence}</p>
+			<p class="sentence">
+				<span>{line1}</span><br />
+				{line2 && <span>{line2}</span>}
+			</p>
 			<nav class="mono">
 				<ul>
 					<li><a href="/theses">THESES</a></li>

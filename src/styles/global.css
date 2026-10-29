@@ -80,9 +80,12 @@ a:focus {
 
 .sentence {
   margin: 0;
-  font-size: 28px;
+  font-size: min(28px, calc((100vw - 2 * var(--gutter)) / 25));
   line-height: 1.2;
-  max-width: 11em;
+}
+
+.sentence span {
+  white-space: nowrap;
 }
 
 .landing nav ul {
@@ -170,10 +173,6 @@ p {
 /* Mobile */
 
 @media (max-width: 600px) {
-  .sentence {
-    font-size: 24px;
-  }
-
   h1 {
     font-size: 30px;
   }
