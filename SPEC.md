@@ -178,8 +178,8 @@ One static image used on every page, so the link looks clean when pasted into em
 
 - Create the Astro project (minimal template), initialize git, and push to a GitHub repo named `nmn-fyi`.
 - Landing page shows only the text `nmn.fyi`.
-- **Needs Naman:** connect the repo in Vercel, add the domain nmn.fyi, set nmndnkr.fyi to redirect to nmn.fyi. Write him exact step-by-step instructions for this in the report.
-- **Done when:** nmn.fyi loads, nmndnkr.fyi redirects to it, and pushing a test branch produces a preview URL.
+- **Needs Naman:** connect the repo in Vercel and add the domain nmn.fyi. Write him exact step-by-step instructions for this in the report.
+- **Done when:** nmn.fyi loads and pushing a test branch produces a preview URL.
 
 ### Gate 1: Content, unstyled
 
