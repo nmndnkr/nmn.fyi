@@ -90,7 +90,7 @@ Only weight 400 anywhere. Italic is for emphasis inside body text only.
 
 ### Layout
 
-- **Landing:** content centered vertically and horizontally in the viewport. The name in mono caps (Naman Dhankhar), 20px of space, then the sentence, then 32px of space, then the mono link list stacked vertically with line-height 2.2. Directly under the THESES link, the title of the most recently updated thesis, in serif 17px, `--muted`, linking to that thesis; it shows only once at least one thesis is published. Nothing else on the page. (Name above the sentence added at Naman's request, 2026-10-29.)
+- **Landing:** content centered vertically and horizontally in the viewport. The name in mono caps (Naman Dhankhar) at roughly 115% of the sentence size, optically centered (text-indent matching letter-spacing), then 24px of space, then the sentence, then 32px of space, then the mono link list stacked vertically with line-height 2.2. Directly under the THESES link, the title of the most recently updated thesis, in serif 17px, `--muted`, linking to that thesis; it shows only once at least one thesis is published. Nothing else on the page. (Name above the sentence added at Naman's request, 2026-10-29.)
 - **Subpages:** one column of width `var(--measure)`, centered, side padding `var(--gutter)`. At the top, a mono `NMN.FYI` link back to `/`. At the bottom, a mono footer row: `EMAIL · LINKEDIN · GITHUB`.
 - **Lists** (theses, work, writing): each item is a row with the title in serif 22px, and metadata beneath in mono (status, date). Rows are separated by a 1px `--rule` line. No cards, no boxes, no images.
 - No horizontal scroll at 375px width.

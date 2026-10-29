@@ -79,7 +79,9 @@ a:focus {
 }
 
 .landing .name {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
+  font-size: min(32px, calc((100vw - 2 * var(--gutter)) * 1.15 / 25));
+  text-indent: 0.15em; /* optically center tracked-out caps */
 }
 
 .sentence {
