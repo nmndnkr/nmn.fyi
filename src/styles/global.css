@@ -78,6 +78,10 @@ a:focus {
   text-align: center;
 }
 
+.landing .name {
+  margin: 0 0 20px;
+}
+
 .sentence {
   margin: 0;
   font-size: min(28px, calc((100vw - 2 * var(--gutter)) / 25));
